@@ -1,21 +1,22 @@
 * {
     box-sizing: border-box;
   }
-  body {
+   body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
     /* grid-template-rows: repeat(auto-fill, minmax(240px, 250px)); */
-  }
+  } 
 
-  main {
+  /* main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-}
+} */
 
-section {
+div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-}
+    grid-template-columns: 50% auto;
+    margin: 0px;
+} 
 
   #a {
       background: #ccc;
@@ -36,18 +37,19 @@ section {
   #c {
     background: #ccc;
     border: 1px solid #111;
-    height: 75px;
-    margin: 0em 3em;
+    height: 380px;
+    margin: 0em 0em 0em 3em;
     text-align: center;
   }
 
   #d {
     background: #ccc;
     border: 1px solid #111;
-    height: 75px;
-    margin: 0em 3em;
+    height: 380px;
+    margin: 0em 3em 0em 0em;
     text-align: center;
   }
+
   /* 240x250 */
   #e, #f, #g, #h {
     /* grid-column: 5 / 1; */
@@ -55,7 +57,7 @@ section {
     background: #ccc;
     border: 1px solid #111;
     height: 250px;
-    margin: 0em 3em;
+    margin: 0em 0em;
     text-align: center;
   }
   /*480x80*/
@@ -63,10 +65,18 @@ section {
     background: #ccc;
     border: 1px solid #111;
     height: 80px;
-    margin: auto 3em 3em;
+    /* margin: auto 3em 3em; */
     text-align: center;
   }
 
+/* #row1 {
+    display: grid;
+}
+
+#row2 {
+    display: grid;
+    justify-content: center;
+} */
 
 
 /* 
@@ -158,6 +168,10 @@ text-align: center;
 
 
 @media (min-width: 960px) {
+    body {
+        margin: auto;
+        width: 100%
+    }
 
     main {
         display: grid;
@@ -206,6 +220,7 @@ text-align: center;
     height: 250px;
     width: 250px;
     margin: 0px;
+    background-color: cornsilk;
    
 }
 
@@ -214,5 +229,18 @@ text-align: center;
     height: 75px;
     width: 250px;
     margin: 0px;
+    background-color: cornsilk;
   
+}
+
+
+#row1 {
+    display: grid;
+    background-color: cornsilk;
+}
+
+#row2 {
+    display: grid;
+    justify-content: center;
+    background-color: cornsilk;
 }
